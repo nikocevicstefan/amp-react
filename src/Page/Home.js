@@ -1,5 +1,5 @@
 import React from 'react';
-import IDCard from '../Component/IDCard';
+//import IDCard from '../Component/IDCard';
 import Modal from '../Component/Modal'
 
 
