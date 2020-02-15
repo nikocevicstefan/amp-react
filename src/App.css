@@ -13,3 +13,7 @@ body{
 h1{
     text-align: center;
 }
+
+.card-img{
+    width: 90%;
+}

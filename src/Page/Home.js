@@ -1,5 +1,7 @@
 import React from 'react';
 import IDCard from '../Component/IDCard';
+import Modal from '../Component/Modal'
+
 
 class Home extends React.Component {
     state = { 
@@ -14,8 +16,7 @@ class Home extends React.Component {
         const user = this.state.user; 
         return ( 
             <>
-            <h1>ID Card</h1>
-            <IDCard user={user}/>
+            <Modal user={user}/>
             </>
          );
     }
