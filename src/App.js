@@ -1,11 +1,15 @@
-import React from 'react'; 
+import React from 'react';
 import './App.css';
-import Home from './Page/Home'
+import Counter from './Page/Counter'
+import Home from "./Page/Home";
 
 function App() {
-  return (
-    <Home />
-  );
+    return (
+        <>
+            <Home/>
+            <Counter/>
+        </>
+    );
 }
 
 export default App;

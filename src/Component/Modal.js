@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const SimpleModal = ({user}) => {
+const SimpleModal = ({content, title}) => {
   const classes = useStyles();
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
@@ -42,10 +42,16 @@ const SimpleModal = ({user}) => {
     setOpen(false);
   };
 
+  const closeButtonStyle = {
+    marginTop: '10px',
+    paddingTop: '10px',
+    alignSelf: 'center'
+  };
+
   return (
     <div>
       <Button variant="contained" color="primary" onClick={handleOpen}>
-        Show IDcard
+        Show {title}
       </Button>
       <Modal
         aria-labelledby="simple-modal-title"
@@ -54,13 +60,14 @@ const SimpleModal = ({user}) => {
         onClose={handleClose}
       >
         <div style={modalStyle} className={classes.paper}>
-          <IDcard user={user}/>
-          <Button onClick={handleClose}  variant="contained" color="secondary">Close</Button>
+          {content}
+          <br />
+          <Button onClick={handleClose}  variant="contained" color="secondary" style={closeButtonStyle}>Close</Button>
         </div>
       </Modal>
     </div>
   );
-}
+};
 
 
 export default SimpleModal;

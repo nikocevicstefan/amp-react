@@ -12,6 +12,6 @@ const IDCard = ({user}) => {
         </div>
         </>
      );
-}
+};
  
 export default IDCard;
