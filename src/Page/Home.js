@@ -13,6 +13,12 @@ class Home extends React.Component {
             'img' : process.env.PUBLIC_URL+'/photo.png'
         }
      };
+
+
+    componentWillUnmount() {
+        console.log("COMPONENT WILL UNMOUNT");
+    }
+
     render() {
         const user = this.state.user; 
         return ( 
