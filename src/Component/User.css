@@ -1,0 +1,17 @@
+.User{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+
+}
+
+.User img {
+    width: 80%;
+    margin: auto;
+}
