@@ -24,7 +24,7 @@ class Users extends Component {
         const {users} = this.state;
         return (
             <div className="Users">
-                <ul style={{backgroundColor:'rgba(2,0,36,1)'}}>
+                <ul style={{backgroundColor:'rgba(63,81,181,0.83)'}}>
                     <Sidebar link={match.url} data={users} className="users-sidebar"/>
                 </ul>
                 <div className="container">

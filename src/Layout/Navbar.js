@@ -8,6 +8,7 @@ class Navbar extends Component {
                 <nav>
                     <p className="nav-logo">LOGO</p>
                     <ul className="nav-links">
+                        <li><NavLink to="/home">Home</NavLink></li>
                         <li><NavLink to="/about">About</NavLink></li>
                         <li><NavLink to="/users">Users</NavLink></li>
                         <li><NavLink to="/counter">Counter</NavLink></li>

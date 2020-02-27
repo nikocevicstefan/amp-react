@@ -12,10 +12,10 @@ function App() {
     return (
         <>
             <Navbar />
+            <Route path="/home" component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/users" component={Users}/>
             <Route path="/counter" component={Counter}/>
-
         </>
     );
 }
