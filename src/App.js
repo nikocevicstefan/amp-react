@@ -14,6 +14,8 @@ function App() {
             <Navbar />
             <Route path="/about" component={About}/>
             <Route path="/users" component={Users}/>
+            <Route path="/counter" component={Counter}/>
+
         </>
     );
 }

@@ -10,6 +10,7 @@ class Navbar extends Component {
                     <ul className="nav-links">
                         <li><NavLink to="/about">About</NavLink></li>
                         <li><NavLink to="/users">Users</NavLink></li>
+                        <li><NavLink to="/counter">Counter</NavLink></li>
                     </ul>
                 </nav>
             </div>
